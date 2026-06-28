@@ -15,7 +15,8 @@
       "Bash(cd \"\\\\\\\\\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\lilyq\\\\mainframe-claim-modernization/legacy-reference/zosconnect-sample-cobol-apirequester\"; echo \"===== claimci0 PROCEDURE excerpts \\(rules\\) =====\"; grep -n -i -E \"IF |ELSE|APPROV|DENI|REJECT|PEND|STATUS|MOVE|EVALUATE|WHEN|< |> |GREATER|LESS|EQUAL|amount|REASON\" source/cobol/claimci0.cbl | head -80)",
       "Read(///wsl.localhost/Ubuntu/home/lilyq/mainframe-claim-modernization/legacy-reference/**)",
       "Bash(grep -n -i -E \"rule|approv|threshold|amount|accept|status|reason|pend|dental|drug|medical|< |> |[0-9]{2,}\" legacy-reference/zosconnect-sample-cobol-apirequester/README.md)",
-      "Bash(mkdir -p specs/001-pbm-rx-modernization/contracts)"
+      "Bash(mkdir -p specs/001-pbm-rx-modernization/contracts)",
+      "PowerShell(& \".specify/extensions/agent-context/scripts/powershell/update-agent-context.ps1\" \"specs/001-pbm-rx-modernization/plan.md\" 2>&1)"
     ]
   }
 }
