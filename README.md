@@ -426,7 +426,7 @@ The constitution defines the non-negotiable principles that guide the entire mod
 ## Step 6: `/specify` Prompt
 
 ```text
-/specify I am building a spec-driven, agent-orchestrated PBM Rx claim adjudication mainframe modernization demo.
+/speckit-specify I am building a spec-driven, agent-orchestrated PBM Rx claim adjudication mainframe modernization demo.
 
 The legacy application to renovate is located in:
 
@@ -532,7 +532,7 @@ The `/specify` step tells the system what you are building, what legacy app you 
 ## Step 7: `/plan` Prompt
 
 ```text
-/plan Use a spec-driven, agent-orchestrated modernization factory.
+/speckit-plan Use a spec-driven, agent-orchestrated modernization factory.
 
 The modernization target is:
 
@@ -653,7 +653,7 @@ The `/plan` step turns the specification into an executable architecture and imp
 ## Step 8: `/tasks` Prompt
 
 ```text
-/tasks Break this project into detailed implementation tasks.
+/speckit-tasks Break this project into detailed implementation tasks.
 
 Use Agents of Agents. Each task must identify the responsible agent role.
 
