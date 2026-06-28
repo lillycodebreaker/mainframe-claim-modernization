@@ -260,84 +260,14 @@ This project uses specialized agents to simulate an enterprise modernization tea
 
 ## Step-by-Step Commands and Prompts
 
-## Step 1: Initialize Spec Kit Project
+## Step 1: Clone Application
 
 ```bash
-uvx --from git+https://github.com/github/spec-kit.git specify init mainframe-modernization-pilot
-cd mainframe-modernization-pilot
-code .
+git clone https://github.com/lillycodebreaker/mainframe-claim-modernization.git 
 ```
 
-Purpose:
 
-This creates the working project where Spec Kit will manage the constitution, specification, plan, and task breakdown.
-
----
-
-## Step 2: Add the Legacy Reference Application
-
-```bash
-mkdir -p legacy-reference
-git clone https://github.com/zosconnect/zosconnect-sample-cobol-apirequester.git legacy-reference/zosconnect-sample-cobol-apirequester
-```
-
-Purpose:
-
-This adds the COBOL/CICS health-claim sample that will serve as the legacy application being renovated.
-
-The agents should read this folder for discovery and rule extraction, but they should not overwrite it.
-
----
-
-## Step 3: Add Style Reference Folders
-
-```bash
-mkdir -p style-reference/modern-node-api-style
-mkdir -p style-reference/python-validation-style
-```
-
-Purpose:
-
-These folders provide coding-style examples for generated modern code.
-
-Use:
-
-- `style-reference/modern-node-api-style` for the Node.js API style
-- `style-reference/python-validation-style` for the Python validator style
-
----
-
-## Step 4: Add Agent Role Files
-
-```bash
-mkdir -p agents
-```
-
-Create or copy the following role files into the `agents/` folder:
-
-```text
-software-engineering.role.md
-cobol-discovery.role.md
-business-rule.role.md
-api-design.role.md
-test-generation.role.md
-risk-compliance.role.md
-developer.role.md
-capability-decomposition.role.md
-data-modernization.role.md
-ui-modernization.role.md
-batch-modernization.role.md
-ai-modernization.role.md
-platform-engineering.role.md
-```
-
-Purpose:
-
-These roles define how the agent team should collaborate across discovery, design, development, testing, compliance, and platform engineering.
-
----
-
-## Step 5: Constitution Prompt
+## Step 2: Constitution Prompt
 
 Use this prompt in your AI coding environment after the project is initialized:
 
@@ -423,7 +353,7 @@ The constitution defines the non-negotiable principles that guide the entire mod
 
 ---
 
-## Step 6: `/specify` Prompt
+## Step 3: `/specify` Prompt
 
 ```text
 /speckit-specify I am building a spec-driven, agent-orchestrated PBM Rx claim adjudication mainframe modernization demo.
@@ -529,7 +459,7 @@ The `/specify` step tells the system what you are building, what legacy app you 
 
 ---
 
-## Step 7: `/plan` Prompt
+## Step 4: `/plan` Prompt
 
 ```text
 /speckit-plan Use a spec-driven, agent-orchestrated modernization factory.
@@ -650,7 +580,7 @@ The `/plan` step turns the specification into an executable architecture and imp
 
 ---
 
-## Step 8: `/tasks` Prompt
+## Step 5: `/tasks` Prompt
 
 ```text
 /speckit-tasks Break this project into detailed implementation tasks.
@@ -697,7 +627,7 @@ The `/tasks` step converts the modernization plan into an actionable backlog tha
 
 ---
 
-## Step 9: Implementation Prompt
+## Step 6: Implementation Prompt
 
 ```text
 Implement the tasks for this project using the full Agents of Agents approach.
@@ -762,7 +692,7 @@ The implementation prompt tells the coding agent how to execute the work while r
 
 ---
 
-## Step 10: Build and Run
+## Step 7: Build and Run
 
 ### Node.js
 
